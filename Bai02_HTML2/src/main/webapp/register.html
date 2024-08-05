@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Đăng ký</title>
+</head>
+<body>
+	<h1>ĐĂNG KÝ THÀNH VIÊN</h1>
+	<table border="1">
+		<tbody>
+			<tr>
+				<td colspan="2"><b>THÔNG TIN ĐĂNG NHẬP</b></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type="email" name="email" id="idEmail"></td>
+			</tr>
+			<tr>
+				<td>Mật khẩu</td>
+				<td><input type="password" name="password" id="idPassword"></td>
+			</tr>
+			<tr>
+				<td>Nhập lại mật khẩu</td>
+				<td><input type="password" name="rePassword" id="idRePassword"></td>
+			</tr>
+			
+			<tr>
+				<td colspan="2"><b>THÔNG TIN CÁ NHÂN</b></td>
+			</tr>
+			<tr>
+				<td>Họ và tên</td>
+				<td><input type="text" name="fullName" id="idFullName"></td>
+			</tr>
+			<tr>
+				<td>Phái</td>
+				<td>
+					<input type="radio" name="gioiTinh" id="idGioiTinhM" value="M">
+					<label for="idGioiTinhM">Nam</label>
+					<input type="radio" name="gioiTinh" id="idGioiTinhFM" value="FM">
+					<label for="idGioiTinhFM">Nữ</label>
+				</td>
+			</tr>
+			<tr>
+				<td>Ngày sinh</td>
+				<td><input type="date" name="ngaySinh" id="idNgaySinh"></td>
+			</tr>
+			<tr>
+				<td>Số điện thoại</td>
+				<td><input type="text" name="sdt" id="idSdt"></td>
+			</tr>
+			<tr>
+				<td>Số di động</td>
+				<td><input type="text" name="sdt" id="idSdt"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><b>ĐỊA CHỈ</b></td>
+			</tr>
+			<tr>
+				<td>Quốc gia</td>
+				<td>
+					<select name="quocGia" id="idQuocGia">
+						<option value="VN">Việt Nam</option>
+						<option value="Rus">Nga</option>
+						<option value="US">Mỹ</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Tỉnh/Thành</td>
+				<td>
+					<select name="tinhThanh" id="idTinhThanh">
+						<option value="TPHCM">TP.HCM</option>
+						<option value="Hue">Huế</option>
+						<option value="HN">Hà Nội</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Quận/Huyện</td>
+				<td>
+					<select name="quanHuyen" id="idQuanHuyen">
+						<option value="A">A</option>
+						<option value="B">B</option>
+						<option value="C">C</option>
+						<option value="D">D</option>
+						<option value="E">E</option>
+						<option value="F">F</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Địa chỉ nhà</td>
+				<td>
+					<textarea rows="5" cols="" name="diaChi" id="idDiaChi"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2"><b>BỔ SUNG</b></td>
+			</tr>
+			<tr>
+				<td>Sở thích</td>
+				<td>
+					<input type="checkbox" name="docSach" id="idDocSach">
+					<label for="idDocSach">Đọc sách</label>
+					<input type="checkbox" name="xemPhim" id="idXemPhim">
+					<label for="idXemPhim">Xem Phim</label>
+				</td>
+			</tr>
+			<tr>
+				<td>Hình ảnh</td>
+				<td>
+					<input type="file" name="hinhAnh" id="idHinhAnh">
+				</td>
+			</tr>
+			<tr>
+				<td>Tuổi</td>
+				<td>
+					<input type="number" name="tuoi" id="idTuoi">
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

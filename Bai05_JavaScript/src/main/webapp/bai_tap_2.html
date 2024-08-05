@@ -1,0 +1,55 @@
+<!-- Viết chương trình khi người dùng nhấn nút sẽ thay đổi nội dung của đoạn trong 1 thẻ div (bằng 2 cách)-->
+<!-- Addition: Khi nhấn nút thì change nội dung thành "NỘI DUNG BỊ THAY ĐỔI" và nút sẽ đổi thành "Trở lại", khi nhấn nút "Trở lại" thì đổi lại như ban đầu -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bài tập 2</title>
+
+</head>
+<body>
+	<div id="my_div">NỘI DUNG BAN ĐẦU</div>
+
+	<input type="button" id="toggleButton" name="toggleButton"
+		value="Thay đổi" onclick="changeText()">
+	<br>
+
+	<!-- Search ChatGPT to know why put <script> in the < body> but not in the <head> -->
+	<script>
+		// Cách 1
+		var toggleButton = document.getElementById("toggleButton")
+		var isChanged = false;
+		
+		toggleButton.onclick = function(){
+			var my_div = document.getElementById("my_div");
+			
+			if(isChanged){
+				my_div.innerHTML = "NỘI DUNG BAN ĐẦU";
+				toggleButton.value = "Thay đổi";
+			}else{
+				my_div.innerHTML = "NỘI DUNG BỊ THAY ĐỔI";
+				toggleButton.value = "Trở lại";
+			}
+			isChanged = !isChanged;
+		}
+
+		// Cách 2
+		/*var toggleButton = document.getElementById("toggleButton")
+		var isChanged = false;
+		function changeText() {
+			var my_div = document.getElementById("my_div");
+			if (isChanged) {
+				my_div.innerHTML = "NOI DUNG BAN DAU";
+				toggleButton.value = "Thay doi";
+			}
+			else{
+				my_div.innerHTML = "NOI DUNG BI THAY DOI";
+				toggleButton.value = "Tro lai";
+			}
+			
+			isChanged = !isChanged;
+		}*/
+		
+	</script>
+</body>
+</html>

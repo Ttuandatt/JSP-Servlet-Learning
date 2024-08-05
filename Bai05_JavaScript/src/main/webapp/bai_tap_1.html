@@ -1,0 +1,23 @@
+<!-- Bài 1: Tạo 1 input (dạng text).
+	 Khi người dùng nhập tên, trang web sẽ hiển thị nội dung: "Xin chào" + tên đã nhập-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bài tập 1</title>
+<script lang="JavaScript">
+	function getName() {
+		var name = document.getElementById("name");
+		var output = document.getElementById("output");
+
+		output.innerHTML = "Xin chào: " + name.value;
+	}
+</script>
+</head>
+<body>
+	Nhập vào tên của bạn:
+	<input type="text" id="name" onchange="getName()" />
+	<!-- onchange: là thay đổi sau khi tab khỏi input box, onkeypress: là nhấp tới đâu thay đổi tới đó -->
+	<p id="output">Xin chào:</p>
+</body>
+</html>

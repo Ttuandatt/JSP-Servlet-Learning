@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HELLO</title>
+</head>
+<body>
+	<h1>Text</h1>
+	<h2>Text</h2>
+	<h3>Text</h3>
+	<h4>Text</h4>
+	<h5>Text</h5>
+	<h6>Text</h6>
+	
+	<p>Đây là một đoạn văn bản</p>
+	<p align="left">Đây là một đoạn văn bản</p>
+	<p align="center">Đây là một đoạn văn bản</p>
+	<p align="right">Đây là một đoạn văn bản</p>
+	
+	<pre>
+	public boolean openConnection(){
+	        try{
+	            con = DriverManager.getConnection(dbUrl, username, password);
+	            return true;
+	        }catch(Exception e){
+	            e.printStackTrace();
+	            return false;
+	        }
+	}
+	</pre>
+	
+	<!-- LIST
+	ol: ordered list
+	ul: unordered list
+	 -->
+	
+	<ol type="I">
+		<li>Mục 1</li>
+		<li>Mục 2
+			<ol type="1">
+				<li>Mục 2.1</li>
+				<li>Mục 2.2
+					<ol type="a">
+						<li>Phần a</li>
+						<li>Phần b</li>
+					</ol>
+				</li>
+			</ol>
+		</li>
+	</ol>
+	
+	<ul type="disc">
+		<li>Mục 1</li>
+		<li>Mục 2
+			<ul type="circle">
+				<li>Mục 2.1</li>
+				<li>Mục 2.2</li>
+			</ul>
+		</li>
+	</ul>
+	
+	<p>
+		<font color="red" size="4" face="arial">Đây và text 1</font>
+		<br/>
+		<font color="blue" size="8" face="arial">Đây và text 2</font>
+	</p>
+	<p>
+		Xin chào đến với <b>SGU</b>
+		<hr/>
+		<br/>
+		Xin chào đến với <strong>UIT</strong>
+		<hr/>
+		<br/>
+		Xin chào đến với <i>Google</i>
+		<hr/>
+		<br/>
+		Xin chào đến với <em>Firefox</em>
+		<hr/>
+		<br/>
+		Xin chào đến với <u>Edge</u>
+		<hr/>
+	</p>
+	
+	<a href="https://www.google.com/?hl=vi">Click here to get to Google!</a>
+	<hr/>
+	
+	<!-- Dùng địa chỉ từ web -->
+	<img src="data:image/jpeg;base64,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"
+	width = 500px
+	height = 100px
+	>
+	
+	<!-- Dùng địa chỉ từ folder trong dự án -->
+	<img src="img/Spider-man_(11).jpg"
+	alt="Image about spiderman"
+	width = 500px
+	height = 100px
+	>
+	
+	<table border="1" width="100%">
+		<thead>
+			<tr>
+				<th width="10%">STT</th>
+				<th width="70%">Họ và tên</th>
+				<th width="20%">Điểm số</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Nguyễn Văn A</td>
+				<td rowspan="2">10</td>
+			</tr>
+			
+			<tr>
+				<td>2</td>
+				<td>Nguyễn Minh B</td>
+				<td>9</td>
+			</tr>
+			
+			<tr>
+				<td colspan="2">3</td>
+				<td>Trần Văn C</td>
+				<td>9</td>
+			</tr>
+		</tbody>
+	</table>
+	
+</body>
+</html>

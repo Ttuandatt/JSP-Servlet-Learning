@@ -1,0 +1,43 @@
+<!-- Bài 4: Viết chương trình ẩn/hiện một thẻ div -->
+<!-- Addition: /-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bài tập 4</title>
+</head>
+<body>
+	<div style="background-color: yellow;" id="my_div">
+		Bài 1: Tạo một input-text, khi người dùng nhập tên, trang web sẽ hiển
+		thị nội dung: “Xin chào “ + tên đã nhập.
+
+		<hr />
+
+		Bài 2: Viết chương trình khi người dùng nhấn nút sẽ thay đổi nội dung
+		của đoạn trong 1 thẻ div (bằng 2 cách).
+
+		<hr />
+		Bài 3: Viết chương trình thay đổi màu nền của thẻ div khi người dùng
+		di chuyển chuột vào khi vực nội bộ của thẻ div.
+	</div>
+	<div>
+		<input type="button" id="toggleButton" value="Ẩn/Hiện"
+			onclick="change()">
+	</div>
+	<script>
+		var isChanged = "hidden";
+		function change(){
+			var my_div = document.getElementById("my_div");
+			
+			if(isChanged=="hidden"){
+				my_div.style.display = "none";
+				isChanged = "show";
+			}else{
+				my_div.style.display = "block";
+				isChanged = "hidden";
+			}
+			
+		}
+	</script>
+</body>
+</html>

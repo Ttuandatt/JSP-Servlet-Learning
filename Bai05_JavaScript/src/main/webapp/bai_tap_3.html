@@ -1,0 +1,50 @@
+<!-- Bài 3: Viết chương trình thay đổi màu nền của thẻ div khi người dùng di chuyển chuột vào khu vực nội bộ của thẻ -->
+<!-- Addition: tạo 1 nút khi nhấn vào thì đổi màu xanh, nhấn lại thì đổi lại màu vàng-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bài tập 3</title>
+</head>
+<body>
+	<div style="background-color: yellow;" id="my_div" onmouseover="changeColorGreen()" onmouseleave="changeColorYellow()">
+		Bài 1: Tạo một input-text, khi người dùng nhập tên, trang web sẽ hiển
+		thị nội dung: “Xin chào “ + tên đã nhập.
+
+		<hr />
+
+		Bài 2: Viết chương trình khi người dùng nhấn nút sẽ thay đổi nội dung
+		của đoạn trong 1 thẻ div (bằng 2 cách).
+
+		<hr />
+		Bài 3: Viết chương trình thay đổi màu nền của thẻ div khi người dùng
+		di chuyển chuột vào khi vực nội bộ của thẻ div.
+	</div>
+	<div>
+		<input type="button" id="toggleButton" value="Đổi màu" onclick="changeColor()">
+	</div>
+	<script>
+		function changeColorGreen() {
+			var my_div = document.getElementById("my_div");
+			my_div.style = "background-color: green;"
+		}
+		function changeColorYellow(){
+			var my_div = document.getElementById("my_div");
+			my_div.style = "background-color: yellow;"
+		}
+		
+		var isChanged = false;
+		function changeColor(){
+			var my_div = document.getElementById("my_div");
+			
+			if(isChanged){
+				my_div.style = "background-color: yellow;"
+			}else{
+				my_div.style = "background-color: green;"
+			}
+			
+			isChanged = !isChanged;
+		}
+	</script>
+</body>
+</html>
